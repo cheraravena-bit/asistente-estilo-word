@@ -1,0 +1,17 @@
+{
+  "name": "word-style-assistant-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Prototype Microsoft Word add-in that reads document text and shows style suggestions in a task pane.",
+  "scripts": {
+    "start": "office-addin-debugging start manifest.xml --no-debug",
+    "debug": "office-addin-debugging start manifest.xml",
+    "serve": "node server.js",
+    "stop": "office-addin-debugging stop manifest.xml",
+    "validate": "office-addin-manifest validate manifest.xml"
+  },
+  "devDependencies": {
+    "office-addin-debugging": "^6.0.0",
+    "office-addin-manifest": "^1.13.0"
+  }
+}
