@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Asistente de Estilo</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+    <link rel="stylesheet" href="./src/taskpane/taskpane.css" />
+  </head>
+  <body>
+    <main class="pane">
+      <header class="header">
+        <div>
+          <p class="eyebrow">Word</p>
+          <h1>Asistente de Estilo</h1>
+        </div>
+        <span id="status" class="status">Listo</span>
+      </header>
+
+      <section class="actions" aria-label="Acciones">
+        <button id="analyzeButton" type="button">Analizar documento</button>
+      </section>
+
+      <section class="summary" aria-live="polite">
+        <p id="summaryText">Abre un documento y ejecuta el analisis para ver sugerencias.</p>
+      </section>
+
+      <section>
+        <h2>Sugerencias</h2>
+        <ul id="suggestions" class="suggestions"></ul>
+      </section>
+    </main>
+
+    <script src="./src/taskpane/taskpane.js"></script>
+  </body>
+</html>
